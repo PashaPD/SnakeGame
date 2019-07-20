@@ -1,0 +1,188 @@
+
+@keyframes one{
+  
+    100% {
+          transform: rotate(360deg);
+    }
+  }
+
+body {
+    background: #666;
+    font-family: 'Play', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.window-endgame {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.window-endgame-button {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to top, #f9d423 0%, #f83600 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.window-endgame-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.window-button {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to top, #f9d423 0%, #f83600 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.window-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 15px;
+}
+
+
+.result {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    padding: 0 5px;
+}
+
+
+.container {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    background: url(https://st2.depositphotos.com/5366154/8310/v/450/depositphotos_83109884-stock-illustration-dark-abstract-vector-background-with.jpg);
+    overflow: hidden;
+    cursor: crosshair;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+}
+
+.container-box {
+    height: 100px;
+    width: 100px;
+    background: url(https://image.flaticon.com/icons/svg/1941/1941731.svg);
+    background-size: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-box-laser {
+    height: 50px;
+    width: 50px;
+    background: url(https://image.flaticon.com/icons/png/512/1774/1774893.png);
+    background-size: contain;
+    position: absolute;
+    transform: rotate(0deg);
+    animation: one 2s infinite linear;
+    z-index: -1;
+}
+
+.point {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    z-index: -1;
+    border: 1px solid black;
+}
+
+.smileyFood {
+    position: absolute;
+    background: url(https://image.flaticon.com/icons/svg/1448/1448787.svg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+.container-line {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-line-danger {
+    height: 150px;
+    width: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #f9d423 0%, #f83600 100%);
+    border: 3px solid black;
+}
+
